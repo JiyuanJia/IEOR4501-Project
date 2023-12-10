@@ -10,7 +10,7 @@ CREATE TABLE complaints
 CREATE TABLE tree
 (
     created_date TIMESTAMP WITHOUT TIME ZONE,
-    tree_id integer,
+    tree_id integer PRIMARY KEY,
     status varchar(50),
     health varchar(50),
     problems text,
@@ -20,14 +20,14 @@ CREATE TABLE tree
 );
 CREATE TABLE rent
 (
-    RegionID integer,
+    RegionID integer PRIMARY KEY,
     RegionName	varchar(100),
     date TIMESTAMP WITHOUT TIME ZONE,
     rent float
 );
 CREATE Table zip_code
 (
-    ZIPCODE varchar(50),
+    ZIPCODE varchar(50) PRIMARY KEY,
     PO_NAME varchar(50),
     POPULATION varchar(50),
     STATE varchar(50),
