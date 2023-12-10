@@ -1,0 +1,4 @@
+SELECT zipcode, COUNT(*) FROM tree
+GROUP BY zipcode
+ORDER BY COUNT(*) DESC
+LIMIT 10
