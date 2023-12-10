@@ -24,6 +24,7 @@ CREATE TABLE rent
     RegionName	varchar(100),
     date TIMESTAMP WITHOUT TIME ZONE,
     rent float
+    geom GEOMETRY(Point, 4326)
 );
 CREATE Table zip_code
 (
