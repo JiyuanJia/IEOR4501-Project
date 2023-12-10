@@ -1,5 +1,9 @@
 # IEOR4501 Project
  Project for IEOR4501
+
+ Project Group 3
+
+ UNIs: [jj3368, kh3261]
  
 Overview: This project focuses on analyzing New York City neighborhoods to assist individuals in finding suitable areas to live in. It leverages NYC Open Data and Zillow's historic rent data to process, store, and analyze neighborhood data.
 
