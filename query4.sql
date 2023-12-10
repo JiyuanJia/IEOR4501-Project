@@ -1,7 +1,6 @@
 with tmp as 
 (
-SELECT substring(date FROM 1 FOR 7) date,
-r.county,r."State",z."COUNTY",z."ZIPCODE",r.rent
+SELECT substring(date FROM 1 FOR 7) date, r.county, r."State", z."COUNTY", z."ZIPCODE", r.rent
 FROM public.rent as r inner join public.zip_code as z
 ON r."State"=z."STATE" 
 AND r.county =z."COUNTY"
@@ -22,6 +21,6 @@ ORDER BY avg(rent) asc
 LIMIT 5)
  
 ) a
-LEFT JOIN tree t on a."ZIPCODE"::INTEGER=t.zipcode
-    JOIN public.complaints c on c.incident_zip=a."ZIPCODE"::INTEGER
+LEFT JOIN tree t ON a."ZIPCODE"::INTEGER=t.zipcode
+    JOIN public.complaints c ON c.incident_zip=a."ZIPCODE"::INTEGER
     GROUP BY a."ZIPCODE",a.avg
