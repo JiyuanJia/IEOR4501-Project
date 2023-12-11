@@ -1,4 +1,4 @@
-WITH tmp AS 
+with tmp AS 
 (
 SELECT substring(DATE FROM 1 FOR 7) DATE, r.county, r."State", z."COUNTY", z."ZIPCODE", r.rent
 FROM public.rent AS r INNER JOIN public.zip_code AS z
