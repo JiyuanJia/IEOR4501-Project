@@ -4,5 +4,5 @@ sodapy
 sqlalchemy
 geopandas
 psycopg2
-matplotlib
 seaborn
+matplotlib
