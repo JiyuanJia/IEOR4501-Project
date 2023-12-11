@@ -1,6 +1,6 @@
 pandas
-sodapy
 numpy
+sodapy
 sqlalchemy
 geopandas
 psycopg2
